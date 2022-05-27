@@ -18,7 +18,7 @@ import java.net.InetAddress;
 import java.net.MulticastSocket;
 import java.awt.event.ActionEvent;
 
-public class Servidor extends JFrame {
+public class ServidorMultiCast extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	static MulticastSocket ms = null;
@@ -45,7 +45,7 @@ public class Servidor extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Servidor frame = new Servidor();
+					ServidorMultiCast frame = new ServidorMultiCast();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -58,7 +58,7 @@ public class Servidor extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Servidor() {
+	public ServidorMultiCast() {
 		setTitle("SERVIDOR MULTICAST - EJERCICIO 2");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 504, 300);

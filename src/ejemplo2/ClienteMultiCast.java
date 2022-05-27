@@ -23,7 +23,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.awt.event.ActionEvent;
 
-public class Cliente extends JFrame {
+public class ClienteMultiCast extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	static MulticastSocket ms = null;	
@@ -63,7 +63,7 @@ public class Cliente extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Cliente frame = new Cliente();
+					ClienteMultiCast frame = new ClienteMultiCast();
 					frame.setVisible(true);
 					frame.setTitle("CLIENTE MULTICAST EJERCICIO 2 - " + nombre);
 				} catch (Exception e) {
@@ -101,7 +101,7 @@ public class Cliente extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Cliente() {
+	public ClienteMultiCast() {
 		setTitle("CLIENTE MULTICAST");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 516, 300);
